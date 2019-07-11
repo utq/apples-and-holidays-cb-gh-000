@@ -66,6 +66,8 @@ def all_supplies_in_holidays(holiday_hash)
     val.each do |key2, val2|
       val2.map!(&:capitalize)
       puts key2.to_s.capitalize + ": " + val2.join(", ")
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
