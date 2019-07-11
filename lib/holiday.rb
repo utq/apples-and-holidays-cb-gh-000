@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts key.to_s.capitalize + ":"
     val.each do |key2, val2|
       val2.map!(&:capitalize)
-      puts key2.to_s.capitalize + ": " + val2.join(", ")
+      puts "  " + key2.to_s.capitalize + ": " + val2.join(", ")
     end
   end
 end
