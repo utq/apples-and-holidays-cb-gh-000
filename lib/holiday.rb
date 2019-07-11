@@ -87,4 +87,5 @@ def all_holidays_with_bbq(holiday_hash)
         key2
       end
     end
+  end
 end
