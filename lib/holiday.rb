@@ -64,7 +64,12 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |key, val|
     puts key.to_s.capitalize + ":"
     val.each do |key2, val2|
-      val2.map!(&:capitalize)
+      newVal = []
+      val2.each do |val3|
+        val3 = val3.split
+        val3.map!(&:capitalize)
+        newVal.push(val3.join(" "))
+      end
       key2 = key2.to_s
       key2 = key2.split(/[\s_]/)
       key2.map!(&:capitalize)
