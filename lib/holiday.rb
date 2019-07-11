@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       key2 = key2.to_s
       key2 = key2.split(/[\s_]/)
       key2.map!(&:capitalize)
-      puts "  " + val2.join(" ") + ": " + val2.join(", ")
+      puts "  " + key2.join(" ") + ": " + val2.join(", ")
     end
   end
 end
